@@ -10,7 +10,7 @@ from langchain_core.runnables import RunnablePassthrough
 # --- 1. Configuration ---
 COLLECTION_NAME = "cours_rag_collection"
 EMBEDDING_MODEL = "mxbai-embed-large"
-LLM_MODEL = "mistral"
+LLM_MODEL = "llama3.2:latest"
 
 # --- 2. Initialize LangChain components ---
 ollama_embeddings = OllamaEmbeddings(model=EMBEDDING_MODEL)
