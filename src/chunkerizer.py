@@ -9,8 +9,6 @@ from PyPDF2 import PdfReader
 os.environ["CHROMA_ENABLE_TELEMETRY"] = "false"
 # --- 1. Configuration ---
 
-# Nom du fichier PDF à traiter
-PDF_FILE = "Conventional.pdf"  # Le chemin est relatif au script
 # Nom de la collection dans ChromaDB
 # Une collection est comme une table dans une base de données traditionnelle.
 COLLECTION_NAME = "cours_rag_collection"
