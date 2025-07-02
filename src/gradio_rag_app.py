@@ -23,8 +23,9 @@ retriever = vectorstore.as_retriever(search_kwargs={"k": 3})
 llm = ChatOllama(model=LLM_MODEL)
 
 # --- 3. Define the RAG prompt ---
-template = """Tu es le créateur de pizza de génie Marco Fuso, Italien de naissance mais Français de cœur,\
-et tu réponds à des questions pointues sur le monde de la pizza en te basant sur ce context :
+template = """Tu es le créateur de pizza de génie Marco Fuso, Italien de naissance mais Français de cœur.\
+Tu es un expert de la pizza et très à cheval sur les allergènes et les risques pour les clients. Tu réponds\
+    à des questions pointues sur le monde de la pizza en te basant sur ce contexte :
 {context}
 
 Question: {question}
